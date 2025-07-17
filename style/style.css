@@ -20,6 +20,14 @@ main{
     max-width: 1240px;
    margin: 0 auto;
 }
+.section-title{
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+.section-description{
+    font-size: 1rem;
+    font-weight: 400;
+}
 /* Color */
 .dark-1{
     color: #131313;
@@ -77,10 +85,7 @@ main{
     font-size: 4rem;
     font-weight: bold;
 }
-.banner-description{
-    font-size: 1rem;
-    font-weight: 400;
-}
+
 .banner-image{
     width: 100%;
     margin-top: 40px;
@@ -99,10 +104,7 @@ main>section{
 .features{
    max-width:530px;
 }
-.features-title{
-    font-size: 2.8rem;
-    font-weight: bold;
-}
+
 #list{
      font-weight: 500;
     
@@ -118,6 +120,68 @@ main>section{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 15px;
+}
+/* Feature */
+
+/* Fact */
+.facts-container{
+    max-width: 540px;
+    
+}
+.icon-container{
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+     margin: 70px;
+     
+}
+.icon{
+    border: 2px solid;
+    color: rgba(255, 144, 14, 1);
+    border-radius: 8px;
+    max-width: 150px;
+    max-height: 150px;
+    text-align: center;
+    padding: 20px;
+   
+}
+.icon h3{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.icon h5{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+/* Sponsor */
+/* .sponsor{
+  padding: 0 350px;
+} */
+
+.title-container{
+   text-align: center;
+   margin: 50px auto;
+   max-width: 440px;
+   max-height: 120px;
+}
+#title{
+    margin-bottom: 20px;
+}
+#des{
+    margin-bottom: 40px;
+}
+.sponsor-icon{
+   display: grid;
+   grid-template-columns: repeat(5,1fr);
+   margin-top: 50px auto;
+   gap: 60px;
+   
+ 
+}
+.sponsor-icon img{
+    filter: grayscale(100%);
 }
 
 
@@ -150,7 +214,25 @@ main>section{
    .features{
     padding-left: 10px;
    }
-   
+   /* facts */
+   .facts-container{
+        text-align: center;
+   }
+   .icon-container{
+    padding-left:20px;
+    padding-right: 20px;
+    grid-template-columns: repeat(1,1fr);
+    gap:10px;
+   }
+   /* Sponsor */
+    .sponsor-icon{
+    grid-template-columns: repeat(1,1fr);
+    gap:30px;
+    padding-left:100px;
+    padding-right: 100px;
+    }
+ 
+  
 
 }
 /* For Tablet */
@@ -161,5 +243,27 @@ main>section{
     .features{
         padding: 50px auto;
     }
+    /* facts */
+  
+   .facts-container{
+          padding-left:45px;
+    
+   }
+   .icon-container{
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    width: 300px;
+    padding-left:80px;
+    padding-right: 80px;
+   }
+   /* Sponsor */
+    .sponsor-icon{
+    grid-template-columns: repeat(1,1fr);
+    gap:30px;
+    
+    padding-left:250px;
+    padding-right: 250px;
+    }
+   
    
 }
